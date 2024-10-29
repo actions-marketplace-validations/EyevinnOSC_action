@@ -1,0 +1,9 @@
+name: "Eyevinn OSC action"
+description: "Run Eyevinn OSC commands"
+author: Eyevinn
+runs:
+  using: docker
+  image: Dockerfile
+branding:
+  icon: cloud
+  color: blue
