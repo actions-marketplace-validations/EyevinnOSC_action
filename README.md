@@ -18,7 +18,7 @@ jobs:
   backup:
     runs-on: ubuntu-latest
     steps:
-    - uses: Eyevinn/osc-action@main
+    - uses: EyevinnOSC/action@main
       with:
         args: create birme-mariadb-backup-s3 example -o MariaDbUrl="{{secrets.mariadburl}}" -o awsAccessKeyId="{{secrets.awsaccesskeyid}}" -o awsSecretAccessKey="{{secrets.awssecretaccesskey}}" -o awsRegion="eu-north-1" -o cmdLineArgs="s3://backup-bucket/"
       env:
